@@ -80,4 +80,10 @@ router.post('/login', async (req: Request, res: Response): Promise<any> => {
   }
 });
 
+// Change temporairement .post en .get juste pour voir si ça marche dans le navigateur
+router.get('/test', (req, res) => {
+  res.json({ message: "Le lien entre server.ts et authRoutes fonctionne !" });
+});
+
+
 export default router;
